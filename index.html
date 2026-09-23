@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Virtual Assistant, Lead Generation & Digital Operations</title>
+    <meta name="description" content="Hire an expert Virtual Assistant with proven experience in inbox management, advanced lead generation, cold outreach, digital marketing, and business administration.">
+    <meta name="keywords" content="Virtual Assistant, Lead Generation, Cold Outreach, Digital Marketing, Executive Assistant, CRM Management">
+    <meta name="author" content="Professional Virtual Assistant & Growth Specialist">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Elite Virtual Assistant & Lead Generation Services">
+    <meta property="og:description" content="Scale your business with expert virtual assistance, cold outreach, CRM management, and streamlined digital operations.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Analytics (GA4) Placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      // Replace 'G-XXXXXXXXXX' with your Google Analytics Measurement ID
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        tealAccent: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                        },
+                        energyOrange: {
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 font-sans antialiased selection:bg-tealAccent-500 selection:text-white transition-colors duration-300">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-950/80 border-b border-slate-200 dark:border-slate-800/80 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-tealAccent-600 dark:bg-tealAccent-500 flex items-center justify-center text-white font-bold shadow-sm group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-slate-900 dark:text-white block">ApexOps & VA</span>
+                    <span class="text-xs text-tealAccent-600 dark:text-tealAccent-400 font-semibold block">5 Years Proven Expertise</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600 dark:text-slate-300">
+                <a href="#about-me" class="hover:text-tealAccent-600 dark:hover:text-tealAccent-400 transition-colors">About & Profile</a>
+                <a href="#services" class="hover:text-tealAccent-600 dark:hover:text-tealAccent-400 transition-colors">Services</a>
+                <a href="#expertise" class="hover:text-tealAccent-600 dark:hover:text-tealAccent-400 transition-colors">Tech Stack</a>
+                <a href="#faq" class="hover:text-tealAccent-600 dark:hover:text-tealAccent-400 transition-colors">FAQ</a>
+            </nav>
+
+            <div class="flex items-center space-x-3 sm:space-x-4">
+                <button id="theme-toggle" aria-label="Toggle Theme" class="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:text-tealAccent-600 dark:hover:text-tealAccent-400 transition-colors">
+                    <i id="theme-toggle-dark-icon" class="fa-solid fa-moon hidden"></i>
+                    <i id="theme-toggle-light-icon" class="fa-solid fa-sun hidden"></i>
+                </button>
+
+                <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-energyOrange-500 hover:bg-energyOrange-600 text-white font-semibold text-sm shadow-sm transition-all transform active:scale-95">
+                    Book Discovery Call
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden text-slate-600 dark:text-slate-300 p-2">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about-me" class="block py-2 text-slate-700 dark:text-slate-300 font-medium">About & Profile</a>
+            <a href="#services" class="block py-2 text-slate-700 dark:text-slate-300 font-medium">Services</a>
+            <a href="#expertise" class="block py-2 text-slate-700 dark:text-slate-300 font-medium">Tech Stack</a>
+            <a href="#faq" class="block py-2 text-slate-700 dark:text-slate-300 font-medium">FAQ</a>
+            <a href="#contact" class="block text-center w-full mt-3 py-3 rounded-xl bg-energyOrange-500 text-white font-semibold">Book Discovery Call</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about-me" class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 text-left space-y-6">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-tealAccent-50 dark:bg-tealAccent-700/20 border border-tealAccent-100 dark:border-tealAccent-600/30 text-tealAccent-700 dark:text-tealAccent-400 text-xs sm:text-sm font-semibold">
+                        <span class="flex h-2 w-2 rounded-full bg-energyOrange-500 animate-pulse"></span>
+                        <span>Executive Support & Growth Operations</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
+                        High-Focus Virtual Assistance & <span class="text-tealAccent-600 dark:text-tealAccent-500">Lead Generation</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 font-normal leading-relaxed max-w-2xl">
+                        Streamlined and structured executive support tailored for fast-moving founders and agencies.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                        <a href="#contact" class="px-7 py-3.5 rounded-xl bg-energyOrange-500 hover:bg-energyOrange-600 text-white font-semibold text-base text-center shadow-md transition-all active:scale-95">
+                            Hire Me Now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-tealAccent-600 text-white text-[10px] uppercase font-extrabold tracking-wider px-4 py-1 rounded-bl-xl">
+                            Available For Hire
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Your Name</h3>
+                        <p class="text-xs text-tealAccent-600 dark:text-tealAccent-400 font-semibold mb-4">Senior VA & Lead Gen Partner</p>
+                        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">• 5+ Years Experience handling inbox management, cold email outreach, and database maintenance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+            <h2 class="text-xs font-extrabold text-tealAccent-600 dark:text-tealAccent-400 uppercase tracking-widest mb-2">Capabilities</h2>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">Core Responsibilities</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl">
+                <i class="fa-solid fa-envelope-open-text text-tealAccent-500 text-2xl mb-4"></i>
+                <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Inbox & Calendar Mgmt</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400">Triaging emails, managing Calendly/Google Calendar links, and organizing travel itineraries.</p>
+            </div>
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl">
+                <i class="fa-solid fa-paper-plane text-tealAccent-500 text-2xl mb-4"></i>
+                <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Cold Email & Outreach</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400">Setting up outbound sequences, prospect research, lead qualification, and inbox setup.</p>
+            </div>
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl">
+                <i class="fa-solid fa-database text-tealAccent-500 text-2xl mb-4"></i>
+                <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-2">CRM & Pipeline Support</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400">Managing HubSpot, Salesforce, and Pipedrive pipelines with regular hygiene and cleanups.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 bg-slate-100/70 dark:bg-slate-900/40 border-t border-slate-200 dark:border-slate-800">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-xs font-extrabold text-tealAccent-600 dark:text-tealAccent-400 uppercase tracking-widest mb-2">Get In Touch</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-2">Schedule a Discovery Call</h3>
+            </div>
+
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <form id="contact-form" class="space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                            <input type="text" name="name" required class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-slate-900 dark:text-white text-sm focus:outline-none focus:border-tealAccent-500" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                            <input type="email" name="email" required class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-slate-900 dark:text-white text-sm focus:outline-none focus:border-tealAccent-500" placeholder="john@company.com">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Primary Service Needs</label>
+                        <select name="service" class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-slate-900 dark:text-white text-sm focus:outline-none focus:border-tealAccent-500">
+                            <option value="Inbox & Calendar Management">Inbox & Calendar Management</option>
+                            <option value="B2B Lead Generation & Outreach">B2B Lead Generation & Outreach</option>
+                            <option value="CRM Maintenance">CRM Maintenance</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Project Details</label>
+                        <textarea name="details" rows="4" required class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-slate-900 dark:text-white text-sm focus:outline-none focus:border-tealAccent-500" placeholder="Briefly describe what you'd like to delegate..."></textarea>
+                    </div>
+
+                    <button type="submit" id="submit-btn" class="w-full py-3.5 rounded-xl bg-energyOrange-500 hover:bg-energyOrange-600 text-white font-bold text-sm shadow-sm transition-all flex items-center justify-center space-x-2">
+                        <span id="btn-text">Send Inquiry</span>
+                        <i id="btn-spinner" class="fa-solid fa-circle-notch fa-spin hidden"></i>
+                    </button>
+                </form>
+
+                <div id="form-success" class="hidden mt-6 p-5 rounded-xl bg-tealAccent-50 dark:bg-tealAccent-700/20 border border-tealAccent-200 text-center">
+                    <i class="fa-solid fa-circle-check text-tealAccent-600 text-2xl mb-2"></i>
+                    <h4 class="text-slate-900 dark:text-white font-bold text-base">Inquiry Submitted!</h4>
+                    <p class="text-slate-600 dark:text-slate-300 text-xs mt-1">Thank you. I will reply shortly.</p>
+                </div>
+
+                <div id="form-error" class="hidden mt-4 p-4 rounded-xl bg-red-50 text-red-600 text-xs text-center">
+                    Something went wrong. Please try again.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-xs text-slate-500 border-t border-slate-200 dark:border-slate-900">
+        <p>&copy; 2026 Operations & Growth Portfolio. Hosted on GitHub Pages.</p>
+    </footer>
+
+    <!-- External Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
